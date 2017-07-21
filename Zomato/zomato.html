@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zomato</title>
+<link rel="stylesheet" href="zomo.css">
+<script src="jquery-2.2.0.js"></script>
+
+</head>
+<body>
+  <div class="item">
+    <img src="C:\Users\rajat\Desktop\zomo\pizza3.jpg" width="1340px" height="600px" >
+  </div>
+
+  <h1>ZOMATO ORDERING</h1>
+  <h2>Find the best restaurants, cafés, and bars in Delhi NCR</h2>
+<div class="item_zero">
+<div class="item_one">
+    <img class="img1" src="C:\Users\rajat\Desktop\zomo\dominos.gif" width="330px" height="230px"  >
+    <div class="menu1 hidden">
+    <ul >
+          <li><input id="checkBox" type="checkbox">Farm House</li>
+        <li><input id="checkBox" type="checkbox">Peppy Paneer</li>
+          <li><input id="checkBox" type="checkbox">Delux Veggie</li>
+            <li><input id="checkBox" type="checkbox">Cheese n Corn</li>
+        </ul>
+      </div>
+      </div>
+
+
+
+      <div class="item_two">
+            <img class="img2" src="C:\Users\rajat\Desktop\zomo\kfc.jpg"width="330px" height="230px">
+            <div class="menu2 hidden">
+              <ul>
+            <li><input id="checkBox" type="checkbox">Potato Krisper</li>
+              <li><input id="checkBox" type="checkbox">Paneer Zinger</li>
+                <li><input id="checkBox" type="checkbox">Chicken Zinger</li>
+                <li><input id="checkBox" type="checkbox">Popcorn Chicken</li>
+              </ul>
+            </div>
+            </div>
+
+
+            <div class="item_three">
+                <img class="img3" src="C:\Users\rajat\Desktop\zomo\PizzaHut.png"width="330px" height="230px">
+                <div class="menu3 hidden">
+                  <ul>
+
+                  <li><input id="checkBox" type="checkbox">Exotic</li>
+                    <li><input id="checkBox" type="checkbox">Country Feast</li>
+                      <li><input id="checkBox" type="checkbox">Tandoori Paneer</li>
+                      <li><input id="checkBox" type="checkbox">Veggie Lover</li>
+                    </ul>
+                  </div>
+                  </div>
+
+
+
+                  <div class="item_four">
+                      <img class="img4" src="C:\Users\rajat\Desktop\zomo\dunkin.jpg"width="310px" height="230px">
+                      <div class="menu4 hidden">
+                        <ul>
+                        <li><input id="checkBox" type="checkbox">Mango Craze </li>
+                          <li><input id="checkBox" type="checkbox">Rainbow Pop</li>
+                            <li><input id="checkBox" type="checkbox">Choco Love Bite</li>
+                            <li><input id="checkBox" type="checkbox">All About Love</li>
+                          </ul>
+                        </div>
+                        </div>
+
+</div>
+
+<button class="CheckOut">Check Out</button>
+
+</body>
+<script>
+$('.img1').on('click',function(){
+  $('.menu1').toggleClass("hidden");
+  $('.menu2').addClass("hidden");
+  $('.menu3').addClass("hidden");
+  $('.menu4').addClass("hidden");
+});
+</script>
+
+<script>
+$('.img2').on('click',function(){
+  $('.menu1').addClass("hidden");
+  $('.menu2').toggleClass("hidden");
+  $('.menu3').addClass("hidden");
+  $('.menu4').addClass("hidden");
+});
+</script>
+
+<script>
+$('.img3').on('click',function(){
+  $('.menu1').addClass("hidden");
+  $('.menu2').addClass("hidden");
+  $('.menu3').toggleClass("hidden");
+  $('.menu4').addClass("hidden");
+});
+</script>
+
+<script>
+$('.img4').on('click',function(){
+  $('.menu1').addClass("hidden");
+  $('.menu2').addClass("hidden");
+  $('.menu3').addClass("hidden");
+  $('.menu4').toggleClass("hidden");
+});
+</script>
+
+<script>
+ $('button').on('click',function(){
+   if($('input:checkbox:checked').length>0){
+     alert("Thank you for ordering.Your order has been ordered");
+     console.log(str($('input:checkbox:checked').length) + "items are selected");
+     console.log($('input:checkbox:checked'));
+   }
+   else{
+      alert("You have not selected any food item");
+   }
+});
+
+
+
+</script>
+
+</html>

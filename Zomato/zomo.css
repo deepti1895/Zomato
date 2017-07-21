@@ -1,0 +1,63 @@
+h1{
+  position: relative;
+  color: white;
+  margin-top: -500px;
+  margin-left: 440px;
+
+}
+
+
+h2{
+  position: relative;
+  color: white;
+  margin-top: -10px;
+  margin-left: 340px;
+
+}
+.item_zero{
+  display:inline-block;
+}
+
+.item_one{
+  display: inline-block;
+  }
+
+.item_two{
+  display: inline-block;
+}
+
+.item_three{
+  display: inline-block;
+}
+
+.item_four{
+  display: inline-block;
+}
+
+.hidden{
+  display: none;
+}
+
+.menu1{
+  font-weight: 900;
+  color: white;
+  background-color: #2560ff;
+}
+
+.menu2{
+  font-weight: 900;
+  color: white;
+  background-color: #c32828;
+}
+
+.menu3{
+  font-weight: 900;
+  color: white;
+  background-color: #ec1313;
+}
+
+.menu4{
+  font-weight: 900;
+  color: white;
+  background-color: #f019b1;
+}
